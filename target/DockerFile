@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8080
+ADD target/docjen-0.0.1-SNAPSHOT.war docjen-0.0.1-SNAPSHOT.war
+ENTRYPOINT ["java","-jar","/docjen-0.0.1-SNAPSHOT.war"]
